@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("Concretes.BinaryGap");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("BinaryGap");
             algroithm.Algroithm();
         }
     }
