@@ -7,6 +7,18 @@ namespace Concretes
 {
     public class BinaryGap : IAlgorithm
     {
+        /*
+        A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is 
+        surrounded by ones at both ends in the binary representation of N.
+
+        EXAMPLE
+
+        input: 9
+        9 binary representation: 1001
+        binary gap: 2 length
+
+        */
+
         void IAlgorithm.Algroithm()
         {
             Console.WriteLine("Binary Gap!");
