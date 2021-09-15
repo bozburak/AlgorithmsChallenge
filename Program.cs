@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("BinaryGap");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("CyclicRotationForArray");
             algroithm.Algroithm();
         }
     }
