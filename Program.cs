@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("OddOccurrencesInArray");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("FrogJmp");
             algroithm.Algroithm();
         }
     }

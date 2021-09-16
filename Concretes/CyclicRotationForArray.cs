@@ -6,15 +6,17 @@ namespace Concretes
     public class CyclicRotationForArray : IAlgorithm
     {
         /*
-        The goal is to rotate array A K times; that is, each element of A will be shifted to the right K times.
-
-        N and K are integers within the range [0..100];
-        each element of array A is an integer within the range [0..1,000].
-        
-        EXAMPLE
-
-        input: Array: [3, 8, 9, 7, 6], RotationKey: 1
-        output: [6, 3, 8, 9, 7] 
+            The goal is to rotate array A K times; that is, each element of A will be shifted to the right K times.
+    
+            EXAMPLE
+    
+            input: Array: [3, 8, 9, 7, 6], RotationKey: 1
+            output: [6, 3, 8, 9, 7] 
+    
+            RULE:
+            
+            N and K are integers within the range [0..100];
+            each element of array A is an integer within the range [0..1,000].
         */
 
         void IAlgorithm.Algroithm()
