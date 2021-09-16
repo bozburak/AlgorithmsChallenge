@@ -1,5 +1,4 @@
 using System;
-using System.Text;
 using Abstracts;
 
 namespace Concretes
@@ -9,6 +8,9 @@ namespace Concretes
         /*
         The goal is to rotate array A K times; that is, each element of A will be shifted to the right K times.
 
+        N and K are integers within the range [0..100];
+        each element of array A is an integer within the range [0..1,000].
+        
         EXAMPLE
 
         input: Array: [3, 8, 9, 7, 6], RotationKey: 1

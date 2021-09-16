@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Text;
 using Abstracts;
 
@@ -10,6 +9,8 @@ namespace Concretes
         /*
         A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is 
         surrounded by ones at both ends in the binary representation of N.
+
+        N is an integer within the range [1..2,147,483,647].
 
         EXAMPLE
 
@@ -22,23 +23,27 @@ namespace Concretes
         void IAlgorithm.Algroithm()
         {
             Console.WriteLine("Binary Gap!");
-            Console.ReadLine();
-            List<int> result = CalculateGapOfLength(20);
+            string n = Console.ReadLine();
+            long[] result = CalculateGapOfLength(Convert.ToInt64(n));
             StringBuilder resultString = new();
-            foreach (int item in result)
+            foreach (long item in result)
             {
-                Console.WriteLine();
-                resultString.AppendLine($"One of Length {item}.");
+                if (item != 0)
+                {
+                    Console.WriteLine();
+                    resultString.AppendLine($"One of Length {item}.");
+                }
             }
             Console.WriteLine(resultString.ToString());
             Console.ReadKey();
         }
 
-        private static List<int> CalculateGapOfLength(int N)
+        private static long[] CalculateGapOfLength(long N)
         {
             string binaryN = Convert.ToString(N, 2).ToString();
-            List<int> allCountOfZero = new();
-            int countOfZero = 0;
+            long[] allCountOfZero = new long[binaryN.Length];
+            long countOfZero = 0;
+            long arrayItemIndex = 0;
             for (int i = 0; i < binaryN.Length; i++)
             {
                 if (binaryN[i] == '0')
@@ -47,8 +52,9 @@ namespace Concretes
                 }
                 else if (countOfZero != 0)
                 {
-                    allCountOfZero.Add(countOfZero);
+                    allCountOfZero[arrayItemIndex] = countOfZero;
                     countOfZero = 0;
+                    arrayItemIndex++;
                 }
             }
             return allCountOfZero;

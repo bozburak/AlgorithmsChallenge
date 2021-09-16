@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("CyclicRotationForArray");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("OddOccurrencesInArray");
             algroithm.Algroithm();
         }
     }
