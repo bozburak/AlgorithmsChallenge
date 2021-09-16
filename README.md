@@ -3,3 +3,4 @@
 - BinaryGap
 - CyclicRotationForArray
 - OddOccurrencesInArray
+- FrogJmp
