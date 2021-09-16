@@ -1,3 +1,5 @@
 # AlgorithmsChallenge
 
 - BinaryGap
+- CyclicRotationForArray
+- OddOccurrencesInArray
