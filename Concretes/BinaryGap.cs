@@ -44,9 +44,9 @@ namespace Concretes
             long[] allCountOfZero = new long[binaryN.Length];
             long countOfZero = 0;
             long arrayItemIndex = 0;
-            for (int i = 0; i < binaryN.Length; i++)
+            for (long i = 0; i < binaryN.Length; i++)
             {
-                if (binaryN[i] == '0')
+                if (binaryN[Convert.ToInt32(i)] == '0')
                 {
                     countOfZero++;
                 }

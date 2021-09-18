@@ -22,26 +22,26 @@ namespace Concretes
         void IAlgorithm.Algroithm()
         {
             Console.WriteLine("Cyclic Rotation!");
-            int[] array = new int[5];
-            for (int i = 0; i < array.Length; i++)
+            long[] array = new long[5];
+            for (long i = 0; i < array.Length; i++)
             {
-                array[i] = Convert.ToInt32(Console.ReadLine());
+                array[i] = Convert.ToInt64(Console.ReadLine());
             }
-            int key = Convert.ToInt32(Console.ReadLine());
-            int[] result = CyclicRotation(array, key);
+            long key = Convert.ToInt64(Console.ReadLine());
+            long[] result = CyclicRotation(array, key);
             Console.WriteLine("Output: [{0}]", string.Join(", ", result));
             Console.ReadKey();
         }
 
-        private static int[] CyclicRotation(int[] A, int K)
+        private static long[] CyclicRotation(long[] A, long K)
         {
-            int i = 1;
+            long i = 1;
             while (K >= i)
             {
-                int[] copyAItems = new int[A.Length];
+                long[] copyAItems = new long[A.Length];
                 A.CopyTo(copyAItems, 0);
-                int lastItem = A[^1];
-                for (int f = 0; f < A.Length; f++)
+                long lastItem = A[^1];
+                for (long f = 0; f < A.Length; f++)
                 {
                     if (A.Length <= f + 1)
                     {

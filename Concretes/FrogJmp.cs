@@ -25,21 +25,21 @@ namespace Concretes
         void IAlgorithm.Algroithm()
         {
             Console.WriteLine("Stepping Jump! Write X then Y then D");
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-            int d = Convert.ToInt32(Console.ReadLine());
+            long x = Convert.ToInt64(Console.ReadLine());
+            long y = Convert.ToInt64(Console.ReadLine());
+            long d = Convert.ToInt64(Console.ReadLine());
             string result = Stepping(x, y, d);
             Console.WriteLine($"Output:{Environment.NewLine}{result}");
             Console.ReadKey();
         }
 
-        private static string Stepping(int x, int y, int d)
+        private static string Stepping(long x, long y, long d)
         {
             string result = string.Empty;
 
             while (y > x)
             {
-                x = x + d;
+                x += d;
                 result += $"{x} + {d} = {x} {Environment.NewLine}";
             }
 

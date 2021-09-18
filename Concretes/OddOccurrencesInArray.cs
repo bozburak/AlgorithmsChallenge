@@ -24,24 +24,24 @@ namespace Concretes
         void IAlgorithm.Algroithm()
         {
             Console.WriteLine("Odd Occurrences In Array!");
-            int[] array = new int[5];
-            for (int i = 0; i < array.Length; i++)
+            long[] array = new long[5];
+            for (long i = 0; i < array.Length; i++)
             {
-                array[i] = Convert.ToInt32(Console.ReadLine());
+                array[i] = Convert.ToInt64(Console.ReadLine());
             }
-            int result = OddOccurrences(array);
+            long result = OddOccurrences(array);
             Console.WriteLine("Output: [{0}]", string.Join(", ", result));
             Console.ReadKey();
         }
 
-        private static int OddOccurrences(int[] A)
+        private static long OddOccurrences(long[] A)
         {
-            int[] copyAItems = new int[A.Length];
+            long[] copyAItems = new long[A.Length];
             A.CopyTo(copyAItems, 0);
-            int previousItem = -1;
-            for (int i = 0; i < A.Length; i++)
+            long previousItem = -1;
+            for (long i = 0; i < A.Length; i++)
             {
-                for (int y = 0; y < A.Length; y++)
+                for (long y = 0; y < A.Length; y++)
                 {
                     if (A[i] == A[y])
                     {
@@ -55,8 +55,8 @@ namespace Concretes
                 }
                 previousItem = -1;
             }
-            int result = 0;
-            for (int c = 0; c < copyAItems.Length; c++)
+            long result = 0;
+            for (long c = 0; c < copyAItems.Length; c++)
             {
                 if (copyAItems[c] != -1)
                 {
