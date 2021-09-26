@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("PermMissingElem");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("TabeEquilibrium");
             algroithm.Algroithm();
         }
     }
