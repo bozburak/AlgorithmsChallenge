@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("FrogRiverOne");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("PermCheck");
             algroithm.Algroithm();
         }
     }
