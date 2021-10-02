@@ -2,5 +2,9 @@
 
 - BinaryGap
 - CyclicRotationForArray
-- OddOccurrencesInArray
 - FrogJmp
+- FrogRiverOne
+- OddOccurrencesInArray
+- PermCheck
+- PermMissingElem
+- TabeEquilibrium
