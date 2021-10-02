@@ -39,14 +39,14 @@ namespace Concretes
 
         private static int CheckPerm(long[] A, int N)
         {
-            HashSet<long> hash = new();
+            HashSet<long> hs = new();
 
             for (long i = 0; i < N; i++)
             {
-                hash.Add(A[i]);
+                hs.Add(A[i]);
             }
 
-            if (hash.Count == N)
+            if (hs.Count == N)
             {
                 return 1;
             }
