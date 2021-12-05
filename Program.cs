@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("PermCheck");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("MaxCounters");
             algroithm.Algroithm();
         }
     }
