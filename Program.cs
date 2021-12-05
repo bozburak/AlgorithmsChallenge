@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("MaxCounters");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("MissingInteger");
             algroithm.Algroithm();
         }
     }
