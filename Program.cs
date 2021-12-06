@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("MissingInteger");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("PassingCars");
             algroithm.Algroithm();
         }
     }
