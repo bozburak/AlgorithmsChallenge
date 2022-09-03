@@ -3,11 +3,11 @@ using Factory;
 
 namespace Main
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
-            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("PassingCars");
+            IAlgorithm algroithm = AlgorithmFactory.GetAlgorithm("OverlappingHours");
             algroithm.Algroithm();
         }
     }
