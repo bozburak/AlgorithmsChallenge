@@ -8,3 +8,4 @@
 - PermCheck
 - PermMissingElem
 - TabeEquilibrium
+- OverlappingHours
